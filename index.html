@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BENRESKALLAH Younes Portfolio</title>
+    <link rel="icon" href="MyLogo.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,10 +14,10 @@
         </div>
         <div class="nav-items">
             <ul>
-                <li><a href="#" data-popup="about" class="nav-link">About me</a></li>
-                <li><a href="#" data-popup="skills" class="nav-link">Skills</a></li>
-                <li><a href="#" data-popup="projects" class="nav-link">Projects</a></li>
-                <li><a href="#" data-popup="order" class="nav-link">Order me</a></li>
+                <li><a href="#Home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#About" class="nav-link" data-section="about">About me</a></li>
+                <li><a href="#Skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#Projects" class="nav-link" data-section="projects">Projects</a></li>
             </ul>
         </div>
         <div class="hamburger">
@@ -26,7 +27,7 @@
         </div>
     </nav>
     
-    <section id="Home" class="glass">
+    <section id="Home" class="section active glass">
         <div class="bubbles">
             <div class="bubble"></div>
             <div class="bubble"></div>
@@ -37,20 +38,41 @@
             <div class="bubble"></div>
             <div class="bubble"></div>
         </div>
-        <h2>Hello, I'm</h2>
+        <p>Hello, I'm</p>
         <h1 id="name"></h1>
-        <p>Data Scientist & Game Designer</p>
+        <h2>Data Scientist & Game Designer</h2>
+    </section>
+    
+    <section id="About" class="section glass">
+        <h2>About Me</h2>
+        <p>Hello! I'm Benreskallah Younes, a college student from Algeria studying Mathematics and Informatics at USTHB. My passion lies in mathematics, specifically in the field of big data. As an active member of microCLUB, I've had the opportunity to engage in exciting projects ranging from game development to website creation. These experiences have not only honed my skills but also fueled my hunger for knowledge. I'm constantly seeking new challenges and opportunities to expand my expertise in the world of technology and data science.</p>
+    </section>
+    
+    <section id="Skills" class="section glass">
+        <h2>My Skills</h2>
+        <ul>
+            <li>Programming Languages: C, C++, C#, JavaScript, Python</li>
+            <li>Version Control: GitHub</li>
+            <li>Office Suite: Excel, Word</li>
+            <li>Scientific Computing: MATLAB</li>
+            <li>Development Environments: VS Code</li>
+            <li>Game Engines: Unity3D, Godot</li>
+            <li>3D Modeling: Blender</li>
+            <li>Design Tools: Figma, Canva, Photoshop</li>
+        </ul>
+    </section>
+    
+    <section id="Projects" class="section glass">
+        <h2>My Projects</h2>
+        <p>Here are some of my projects...</p>
+        <!-- Add your projects here -->
     </section>
 
-    <div id="popup-container" class="hidden">
-        <div id="popup-content" class="glass">
-            <button id="close-popup">&times;</button>
-            <h2 id="popup-title"></h2>
-            <p id="popup-text"></p>
-        </div>
-    </div>
-    <div id="particles-js"></div>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <footer>
+        <a href="#" target="_blank">LinkedIn</a>
+        <span class="footer-separator"></span>
+        <a href="#" target="_blank">GitHub</a>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
