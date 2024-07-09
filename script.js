@@ -107,3 +107,28 @@ closePopup.addEventListener('click', () => {
     popupContainer.classList.add('hidden');
     document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
 });
+// Mobile menu functionality
+const hamburger = document.querySelector('.hamburger');
+const navItems = document.querySelector('.nav-items');
+const body = document.body;
+
+hamburger.addEventListener('click', () => {
+    navItems.classList.toggle('active');
+    body.classList.toggle('menu-open');
+});
+
+// Close mobile menu when a link is clicked
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        navItems.classList.remove('active');
+        body.classList.remove('menu-open');
+    });
+});
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', (event) => {
+    if (!navItems.contains(event.target) && !hamburger.contains(event.target)) {
+        navItems.classList.remove('active');
+        body.classList.remove('menu-open');
+    }
+});
