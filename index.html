@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+            <img src="MyLogo.png" alt="Logo">
+        </div>
+        <div class="nav-items">
+            <ul>
+                <li><a href="#" data-popup="about" class="nav-link">About me</a></li>
+                <li><a href="#" data-popup="skills" class="nav-link">Skills</a></li>
+                <li><a href="#" data-popup="projects" class="nav-link">Projects</a></li>
+                <li><a href="#" data-popup="order" class="nav-link">Order me</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section id="Home" class="glass">
+        <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+        <h2>Hello i'm</h2>
+        <h1 id="name"></h1>
+        <p>Data Scientist & Game Designer</p>
+    </section>
+
+    <div id="popup-container" class="hidden">
+        <div id="popup-content" class="glass">
+            <button id="close-popup">&times;</button>
+            <h2 id="popup-title"></h2>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+    <div id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
